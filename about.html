@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - About</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('hotel1.jpg') center/cover no-repeat;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Align items to the right */
+            margin-top: 20px;
+        }
+
+        h3 {
+            margin-left: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            margin: 20px;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hotel {
+            margin-bottom: 30px;
+        }
+
+        .hotel img {
+            max-width: 100%;
+            max-height: 300px; /* Adjust the height as needed */
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .visit-link {
+            color: blue;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            h3 {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking</h1>
+        <nav>
+            <h3><a href="index.html">Home</a></h3>
+            <h3><a href="about.html">About</a></h3>
+            <h3><a href="contact.html">Contact</a></h3>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="content">
+                <h2>About Our Hotel</h2>
+                <p>Welcome to our luxurious hotel! We pride ourselves on providing excellent service and a comfortable stay for all our guests. Our hotel is situated in a prime location, offering breathtaking views and convenient access to nearby attractions. Whether you're here for business or leisure, we strive to make your experience memorable.</p>
+
+                <h3>Our Featured Hotels:</h3>
+
+                <div class="hotel">
+                    <h4>1. Grand Palace Hotel</h4>
+                    <img src="A.jpg" alt="Grand Palace Hotel Image">
+                    <p>Experience elegance and sophistication at our Grand Palace Hotel. With spacious rooms, gourmet dining, and a world-class spa, your stay will be nothing short of extraordinary.</p>
+                    <p>Visit: <a href="https://www.grandpalacehotel.com" class="visit-link" target="_blank">GrandPalaceHotel.com</a></p>
+                    <p>Price: $300 per night</p>
+                </div>
+
+                <div class="hotel">
+                    <h4>2. Ocean View Resort</h4>
+                    <img src="B.jpg" alt="Ocean View Resort Image">
+                    <p>Escape to the tranquility of Ocean View Resort, where each room offers stunning views of the ocean. Enjoy our private beach, poolside cabanas, and delicious coastal cuisine.</p>
+                    <p>Visit: <a href="https://www.oceanviewresort.com" class="visit-link" target="_blank">OceanViewResort.com</a></p>
+                    <p>Price: $250 per night</p>
+                </div>
+
+                <div class="hotel">
+                    <h4>3. City Lights Inn</h4>
+                    <img src="D.jpg" alt="City Lights Inn Image">
+                    <p>For those seeking the excitement of the city, City Lights Inn is the perfect choice. Located in the heart of downtown, our hotel provides easy access to theaters, shopping, and nightlife.</p>
+                    <p>Visit: <a href="https://www.citylightsinn.com" class="visit-link" target="_blank">CityLightsInn.com</a></p>
+                    <p>Price: $200 per night</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

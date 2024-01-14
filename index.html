@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('hotel1.jpg') center/cover no-repeat;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        h3 {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 20px;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .booking-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #2181c4;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-header h2 {
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .form-inline {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-inline .form-group {
+            flex-basis: 48%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking</h1>
+        <nav>
+            <h3><a href="index.html">Home</a></h3>
+            <h3><a href="about.html">About</a></h3>
+            <h3><a href="contact.html">Contact</a></h3>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="booking-form">
+                <div class="form-header">
+                    <h2>Book Your Stay</h2>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="check-in">Check-In Date:</label>
+                            <input type="date" id="check-in" name="check-in" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="check-out">Check-Out Date:</label>
+                            <input type="date" id="check-out" name="check-out" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rooms">Number of Rooms:</label>
+                        <select id="rooms" name="rooms" required>
+                            <option value="1">1 Room</option>
+                            <option value="2">2 Rooms</option>
+                            <option value="3">3 Rooms</option>
+                            <option value="4">4 Rooms</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" name="search" placeholder="Search for amenities or locations">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment">Payment Details:</label>
+                        <input type="text" id="payment" name="payment" placeholder="Credit Card Number" required>
+                    </div>
+
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

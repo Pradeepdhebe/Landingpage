@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Contact</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('hotel1.jpg') center/cover no-repeat;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Align to the right */
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        li {
+            margin-left: 20px; /* Adjust the spacing */
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            margin: 20px;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        address {
+            font-style: normal;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            ul {
+                margin-top: 10px;
+            }
+
+            li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need assistance, feel free to contact our friendly staff. We are here to help make your stay enjoyable and comfortable.</p>
+                <address>
+                    <strong>Hotel Booking</strong><br>
+                    123 Main Street<br>
+                    Cityville, USA<br>
+                    Email: info@hotelbooking.com<br>
+                    Phone: +1 (555) 123-4567
+                </address>
+
+                <h3>Contact Information for Featured Hotels:</h3>
+
+                <div class="hotel">
+                    <h4>1. Grand Palace Hotel</h4>
+                    <p>Email: grandpalace@hotelbooking.com<br>Phone: +1 (555) 111-1111</p>
+                </div>
+
+                <div class="hotel">
+                    <h4>2. Ocean View Resort</h4>
+                    <p>Email: oceanview@hotelbooking.com<br>Phone: +1 (555) 222-2222</p>
+                </div>
+
+                <div class="hotel">
+                    <h4>3. City Lights Inn</h4>
+                    <p>Email: citylights@hotelbooking.com<br>Phone: +1 (555) 333-3333</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
